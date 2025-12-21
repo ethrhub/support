@@ -79,11 +79,13 @@ curl -I https://www.ethrhub.com
 **Symptoms:** Second agent won't start or conflicts
 
 **Solutions:**
-Use different ports for each agent:
+When running multiple agents in hub mode on the same machine, they automatically use different ephemeral local ports. No special configuration is needed:
 ```bash
-./ethr -hub https://www.ethrhub.com -port 8888
-./ethr -hub https://www.ethrhub.com -port 9999
+./ethr -hub https://www.ethrhub.com
+./ethr -hub https://www.ethrhub.com
 ```
+
+**Note:** The `-port` parameter is only relevant in server/client mode (when using `-s` or `-c` flags), not for hub mode. In hub mode, agents automatically handle port allocation.
 
 ### Test Issues
 

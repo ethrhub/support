@@ -120,11 +120,6 @@ When you first run the agent, you'll need to authorize it:
 
 ### Advanced Options
 
-#### Specify Custom Port
-```bash
-./ethr -hub https://www.ethrhub.com -port 9999
-```
-
 #### Use IPv6
 ```bash
 ./ethr -hub https://www.ethrhub.com -6
@@ -139,6 +134,8 @@ When you first run the agent, you'll need to authorize it:
 ```bash
 ./ethr -hub https://www.ethrhub.com -ip 192.168.1.100
 ```
+
+**Note:** The `-port` parameter is only used in server/client mode (not hub mode) to specify the server's listening port or destination port. In hub mode, agents automatically use ephemeral local ports.
 
 ## Running as a Service
 

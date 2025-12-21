@@ -42,11 +42,13 @@ Yes. Agents only need outbound HTTPS (443) access to www.ethrhub.com. Test traff
 5. Optionally delete token files on the agent machine
 
 ### Can I run multiple agents on the same machine?
-Yes, but they must use different ports. Use the `-port` parameter:
+Yes! When running multiple agents in hub mode on the same machine, they automatically use different ephemeral local ports, so no special configuration is needed. Simply run each agent separately:
 ```bash
-./ethr -hub https://www.ethrhub.com -port 8888
-./ethr -hub https://www.ethrhub.com -port 9999
+./ethr -hub https://www.ethrhub.com
+./ethr -hub https://www.ethrhub.com
 ```
+
+**Note:** The `-port` parameter is only needed in server/client mode to specify the server's listening port, not for hub mode.
 
 ### Where are agent tokens stored?
 - **Linux/macOS**: `~/.ethr_tokens/`
