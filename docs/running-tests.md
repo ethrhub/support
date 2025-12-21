@@ -317,4 +317,4 @@ curl -X POST https://www.ethrhub.com/api/test \
 - [Understand agent installation](agent-installation.md)
 - [Explore the API](api-reference.md)
 - [Check troubleshooting guide](troubleshooting.md)
-- [Ask questions in discussions](https://github.com/ethrhub/ethrhub/discussions)
+- [Ask questions in discussions](https://github.com/ethrhub/hub/discussions)

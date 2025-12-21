@@ -279,8 +279,8 @@ Test configuration is incorrect. Check duration, protocol, and other settings.
 If you're still experiencing problems:
 
 1. **Check System Status:** Visit our status page (if available)
-2. **Search Issues:** Look for similar problems at https://github.com/ethrhub/ethrhub/issues
-3. **Ask Community:** Post in https://github.com/ethrhub/ethrhub/discussions
+2. **Search Issues:** Look for similar problems at https://github.com/ethrhub/hub/issues
+3. **Ask Community:** Post in https://github.com/ethrhub/hub/discussions
 4. **Contact Support:** Email support@ethrhub.com with:
    - Detailed description of the issue
    - Steps to reproduce

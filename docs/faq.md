@@ -208,13 +208,13 @@ Premium plans include a 99.9% uptime SLA. See our Terms of Service for details.
 - [Troubleshooting](troubleshooting.md)
 
 ### How do I report a bug?
-[Open an issue on GitHub](https://github.com/ethrhub/ethrhub/issues/new?template=bug_report.md)
+[Open an issue on GitHub](https://github.com/ethrhub/hub/issues/new?template=bug_report.md)
 
 ### How do I request a feature?
-[Submit a feature request](https://github.com/ethrhub/ethrhub/issues/new?template=feature_request.md)
+[Submit a feature request](https://github.com/ethrhub/hub/issues/new?template=feature_request.md)
 
 ### Where can I ask questions?
-[Visit our Discussions forum](https://github.com/ethrhub/ethrhub/discussions)
+[Visit our Discussions forum](https://github.com/ethrhub/hub/discussions)
 
 ### How do I contact support?
 - **Email**: support@ethrhub.com

@@ -449,7 +449,7 @@ curl -H "Authorization: Bearer YOUR_TOKEN" \
 
 For API support:
 - Premium customers: support@ethrhub.com (4-8 hour response)
-- Community: https://github.com/ethrhub/ethrhub/discussions
+- Community: https://github.com/ethrhub/hub/discussions
 
 ## Changelog
 
