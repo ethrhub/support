@@ -84,14 +84,14 @@ Create test sessions from your dashboard and start measuring network performance
 ## 📊 Pricing
 
 ### Basic Plan (Free)
-- Up to 10 agents
-- 100 tests per day
+- Up to 5 agents
+- 50 tests per day
 - 30 days of history
 - Community support
 
 ### Premium Plan
-- Unlimited agents
-- Unlimited tests
+- Up to 100 agents
+- 1,000 tests per day
 - Unlimited history retention
 - Priority email support
 - Advanced analytics

@@ -263,34 +263,16 @@ Future releases will include:
 
 ## Test Limits
 
-### Free Plan
-- Maximum 10 concurrent tests
-- 100 tests per day
+### Basic Plan
+- Up to 5 agents
+- 50 tests per day
 - 30 days of history
 
 ### Premium Plan
-- Unlimited concurrent tests
-- Unlimited tests per day
+- Up to 100 agents
+- 1,000 tests per day
 - Unlimited history
 - Priority test queue
-
-## API Access
-
-You can also run tests via the API. See the [API Reference](api-reference.md) for details.
-
-Example:
-```bash
-curl -X POST https://www.ethrhub.com/api/test \
-  -H "Authorization: Bearer YOUR_TOKEN" \
-  -H "Content-Type: application/json" \
-  -d '{
-    "type": "bandwidth",
-    "sourceAgentId": "agent-123",
-    "destAgentId": "agent-456",
-    "duration": 30,
-    "protocol": "tcp"
-  }'
-```
 
 ## Troubleshooting
 
@@ -315,6 +297,5 @@ curl -X POST https://www.ethrhub.com/api/test \
 ## Next Steps
 
 - [Understand agent installation](agent-installation.md)
-- [Explore the API](api-reference.md)
 - [Check troubleshooting guide](troubleshooting.md)
 - [Ask questions in discussions](https://github.com/ethrhub/hub/discussions)

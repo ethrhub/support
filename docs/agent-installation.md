@@ -23,21 +23,42 @@ This guide provides detailed instructions for installing and configuring Ethr ag
 
 ## Installation
 
+### Quick Install (All Platforms)
+
+**Linux/macOS - One Command:**
+```bash
+case "$(uname -s)_$(uname -m)" in
+  Linux_x86_64)   URL="https://github.com/ethrhub/ethr/releases/latest/download/ethr_linux_amd64.zip" ;;
+  Linux_aarch64)  URL="https://github.com/ethrhub/ethr/releases/latest/download/ethr_linux_arm64.zip" ;;
+  Darwin_x86_64)  URL="https://github.com/ethrhub/ethr/releases/latest/download/ethr_darwin_amd64.zip" ;;
+  Darwin_arm64)   URL="https://github.com/ethrhub/ethr/releases/latest/download/ethr_darwin_arm64.zip" ;;
+  *) echo "Unsupported OS/architecture"; exit 1 ;;
+esac
+curl -L "$URL" -o ethr.zip && unzip ethr.zip && rm ethr.zip && chmod +x ethr && sudo mv ethr /usr/local/bin/ && echo "✓ ethr installed to /usr/local/bin/"
+```
+
+**Windows (PowerShell):**
+```powershell
+Invoke-WebRequest -Uri "https://github.com/ethrhub/ethr/releases/latest/download/ethr_windows_amd64.zip" -OutFile "ethr.zip"; Expand-Archive -Force ethr.zip -DestinationPath "$env:USERPROFILE\bin"; Remove-Item ethr.zip; Write-Host "✓ ethr installed to $env:USERPROFILE\bin"
+```
+
+### Platform-Specific Installation
+
 ### Linux
 
 #### Ubuntu/Debian
 ```bash
-# Download the latest release
-wget https://github.com/microsoft/ethr/releases/latest/download/ethr_linux.zip
-
-# Extract
-unzip ethr_linux.zip
-
-# Make executable
+# Download and install
+case "$(uname -m)" in
+  x86_64)   FILE="ethr_linux_amd64.zip" ;;
+  aarch64)  FILE="ethr_linux_arm64.zip" ;;
+  *) echo "Unsupported architecture"; exit 1 ;;
+esac
+wget https://github.com/ethrhub/ethr/releases/latest/download/$FILE
+unzip $FILE
 chmod +x ethr
-
-# Optional: Move to system path
 sudo mv ethr /usr/local/bin/
+rm $FILE
 
 # Verify installation
 ethr --version
@@ -45,13 +66,17 @@ ethr --version
 
 #### RHEL/CentOS/Fedora
 ```bash
-# Download
-curl -L https://github.com/microsoft/ethr/releases/latest/download/ethr_linux.zip -o ethr_linux.zip
-
-# Extract and install
-unzip ethr_linux.zip
+# Download and install
+case "$(uname -m)" in
+  x86_64)   FILE="ethr_linux_amd64.zip" ;;
+  aarch64)  FILE="ethr_linux_arm64.zip" ;;
+  *) echo "Unsupported architecture"; exit 1 ;;
+esac
+curl -L https://github.com/ethrhub/ethr/releases/latest/download/$FILE -o ethr.zip
+unzip ethr.zip
 chmod +x ethr
 sudo mv ethr /usr/local/bin/
+rm ethr.zip
 ```
 
 ### macOS
@@ -306,5 +331,4 @@ To revoke an agent's access:
 
 - [Run your first test](running-tests.md)
 - [Understand agent status indicators](faq.md#agent-status)
-- [Configure advanced settings](api-reference.md)
 - [Get help in discussions](https://github.com/ethrhub/hub/discussions)

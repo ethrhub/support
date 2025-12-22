@@ -21,26 +21,28 @@ Before you begin, make sure you have:
 
 ## Step 2: Download the Ethr Agent
 
-EthrHub uses Microsoft's Ethr tool as the measurement agent. Download the appropriate version for your platform:
+### Quick Install (Recommended)
 
-### Linux (x64)
+**Linux/macOS - Copy and paste this command:**
 ```bash
-wget https://github.com/microsoft/ethr/releases/latest/download/ethr_linux.zip
-unzip ethr_linux.zip
-chmod +x ethr
+case "$(uname -s)_$(uname -m)" in
+  Linux_x86_64)   URL="https://github.com/ethrhub/ethr/releases/latest/download/ethr_linux_amd64.zip" ;;
+  Linux_aarch64)  URL="https://github.com/ethrhub/ethr/releases/latest/download/ethr_linux_arm64.zip" ;;
+  Darwin_x86_64)  URL="https://github.com/ethrhub/ethr/releases/latest/download/ethr_darwin_amd64.zip" ;;
+  Darwin_arm64)   URL="https://github.com/ethrhub/ethr/releases/latest/download/ethr_darwin_arm64.zip" ;;
+  *) echo "Unsupported OS/architecture"; exit 1 ;;
+esac
+curl -L "$URL" -o ethr.zip && unzip ethr.zip && rm ethr.zip && chmod +x ethr && echo "✓ ethr installed"
 ```
 
-### macOS (x64)
-```bash
-curl -L https://github.com/microsoft/ethr/releases/latest/download/ethr_darwin.zip -o ethr_darwin.zip
-unzip ethr_darwin.zip
-chmod +x ethr
+**Windows (PowerShell) - Copy and paste this command:**
+```powershell
+Invoke-WebRequest -Uri "https://github.com/ethrhub/ethr/releases/latest/download/ethr_windows_amd64.zip" -OutFile "ethr.zip"; Expand-Archive -Force ethr.zip -DestinationPath .; Remove-Item ethr.zip; Write-Host "✓ ethr installed"
 ```
 
-### Windows
-Download from: https://github.com/microsoft/ethr/releases/latest/download/ethr_windows.zip
+### Manual Download
 
-Extract the ZIP file and you're ready to go!
+If you prefer to download manually, visit [releases page](https://github.com/ethrhub/ethr/releases/latest) and choose your platform.
 
 ## Step 3: Connect Your First Agent
 
@@ -121,7 +123,6 @@ Now that you're up and running:
 
 - [Learn about different test types](running-tests.md)
 - [Explore agent configuration options](agent-installation.md)
-- [Check out the API for automation](api-reference.md)
 - [Read troubleshooting tips](troubleshooting.md)
 
 ## Getting Help

@@ -109,14 +109,14 @@ EthrHub uses OAuth, so password management is handled by your OAuth provider (Go
 ## Billing & Plans
 
 ### What's included in the Basic plan?
-- Up to 10 agents
-- 100 tests per day
+- Up to 5 agents
+- 50 tests per day
 - 30 days of history
 - Community support
 
 ### What's included in the Premium plan?
-- Unlimited agents
-- Unlimited tests
+- Up to 100 agents
+- 1,000 tests per day
 - Unlimited history
 - Priority support
 - Advanced analytics
@@ -189,9 +189,6 @@ Yes! Use the `-6` flag when starting agents:
 ./ethr -hub https://www.ethrhub.com -6
 ```
 
-### Can I automate tests via API?
-Yes! Premium plans include full API access. See the [API Reference](api-reference.md).
-
 ### What happens to my data if I cancel?
 You have 30 days to export your data after cancellation. After that, data is permanently deleted per our privacy policy.
 
@@ -204,7 +201,6 @@ Premium plans include a 99.9% uptime SLA. See our Terms of Service for details.
 - [Getting Started Guide](getting-started.md)
 - [Agent Installation](agent-installation.md)
 - [Running Tests](running-tests.md)
-- [API Reference](api-reference.md)
 - [Troubleshooting](troubleshooting.md)
 
 ### How do I report a bug?
