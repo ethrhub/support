@@ -130,8 +130,8 @@ Now that you're up and running:
 If you run into any issues:
 
 - Check the [FAQ](faq.md)
-- Visit our [Discussions forum](https://github.com/ethrhub/hub/discussions)
-- [Open an issue](https://github.com/ethrhub/hub/issues) if you found a bug
+- Visit our [Discussions forum](https://github.com/ethrhub/support/discussions)
+- [Open an issue](https://github.com/ethrhub/support/issues) if you found a bug
 - Email us at support@ethrhub.com
 
 Welcome to EthrHub! 🚀

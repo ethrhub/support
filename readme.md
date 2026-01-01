@@ -3,8 +3,8 @@
 > Enterprise network performance monitoring made simple
 
 [![Website](https://img.shields.io/badge/Website-ethrhub.com-blue)](https://www.ethrhub.com)
-[![Issues](https://img.shields.io/github/issues/ethrhub/hub)](https://github.com/ethrhub/hub/issues)
-[![Discussions](https://img.shields.io/github/discussions/ethrhub/hub)](https://github.com/ethrhub/hub/discussions)
+[![Issues](https://img.shields.io/github/issues/ethrhub/hub)](https://github.com/ethrhub/support/issues)
+[![Discussions](https://img.shields.io/github/discussions/ethrhub/hub)](https://github.com/ethrhub/support/discussions)
 
 ## What is EthrHub?
 
@@ -65,9 +65,9 @@ Create test sessions from your dashboard and start measuring network performance
 
 ## 💬 Community & Support
 
-- **Questions?** Join our [Discussions](https://github.com/ethrhub/hub/discussions)
-- **Bug Reports:** [Report an Issue](https://github.com/ethrhub/hub/issues/new?template=bug_report.md)
-- **Feature Requests:** [Request a Feature](https://github.com/ethrhub/hub/issues/new?template=feature_request.md)
+- **Questions?** Join our [Discussions](https://github.com/ethrhub/support/discussions)
+- **Bug Reports:** [Report an Issue](https://github.com/ethrhub/support/issues/new?template=bug_report.md)
+- **Feature Requests:** [Request a Feature](https://github.com/ethrhub/support/issues/new?template=feature_request.md)
 - **Email Support:** support@ethrhub.com
 
 ## 📋 System Requirements

@@ -298,4 +298,4 @@ Future releases will include:
 
 - [Understand agent installation](agent-installation.md)
 - [Check troubleshooting guide](troubleshooting.md)
-- [Ask questions in discussions](https://github.com/ethrhub/hub/discussions)
+- [Ask questions in discussions](https://github.com/ethrhub/support/discussions)

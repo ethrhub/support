@@ -10,7 +10,7 @@ Found a bug or problem? Help us fix it!
 
 **Before submitting:**
 1. Check the [FAQ](docs/faq.md) - it might already be answered
-2. Search [existing issues](https://github.com/ethrhub/hub/issues) to avoid duplicates
+2. Search [existing issues](https://github.com/ethrhub/support/issues) to avoid duplicates
 3. Try the [troubleshooting guide](docs/troubleshooting.md)
 
 **When reporting:**
@@ -25,7 +25,7 @@ Found a bug or problem? Help us fix it!
 Have an idea for a new feature?
 
 **Before requesting:**
-- Check [existing requests](https://github.com/ethrhub/hub/issues?q=is%3Aissue+label%3Aenhancement)
+- Check [existing requests](https://github.com/ethrhub/support/issues?q=is%3Aissue+label%3Aenhancement)
 - Consider if it benefits other users
 - Think about how it fits with EthrHub's goals
 
@@ -56,7 +56,7 @@ Help make our docs better!
 Join the community and help fellow users!
 
 **Ways to help:**
-- Answer questions in [Discussions](https://github.com/ethrhub/hub/discussions)
+- Answer questions in [Discussions](https://github.com/ethrhub/support/discussions)
 - Share your tips and best practices
 - Help troubleshoot issues
 - Welcome new users
@@ -124,7 +124,7 @@ We appreciate your contributions!
 ## Questions?
 
 - Check the [FAQ](docs/faq.md)
-- Join [Discussions](https://github.com/ethrhub/hub/discussions)
+- Join [Discussions](https://github.com/ethrhub/support/discussions)
 - Email support@ethrhub.com
 
 ---

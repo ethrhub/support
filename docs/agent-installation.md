@@ -331,4 +331,4 @@ To revoke an agent's access:
 
 - [Run your first test](running-tests.md)
 - [Understand agent status indicators](faq.md#agent-status)
-- [Get help in discussions](https://github.com/ethrhub/hub/discussions)
+- [Get help in discussions](https://github.com/ethrhub/support/discussions)
