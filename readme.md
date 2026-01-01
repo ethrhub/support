@@ -3,8 +3,8 @@
 > Enterprise network performance monitoring made simple
 
 [![Website](https://img.shields.io/badge/Website-ethrhub.com-blue)](https://www.ethrhub.com)
-[![Issues](https://img.shields.io/github/issues/ethrhub/hub)](https://github.com/ethrhub/support/issues)
-[![Discussions](https://img.shields.io/github/discussions/ethrhub/hub)](https://github.com/ethrhub/support/discussions)
+[![Issues](https://img.shields.io/github/issues/ethrhub/support)](https://github.com/ethrhub/support/issues)
+[![Discussions](https://img.shields.io/github/discussions/ethrhub/support)](https://github.com/ethrhub/support/discussions)
 
 ## What is EthrHub?
 
