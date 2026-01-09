@@ -31,7 +31,25 @@ EthrHub is a cloud-based network performance monitoring platform that helps you 
 Visit [www.ethrhub.com](https://www.ethrhub.com) and sign in with Google, GitHub, or Microsoft.
 
 ### 2. Download Agent
-Download the agent for your platform from our [downloads page](https://www.ethrhub.com/downloads).
+
+**Linux/macOS:**
+```bash
+case "$(uname -s)_$(uname -m)" in
+  Linux_x86_64)   URL="https://github.com/ethrhub/ethr/releases/latest/download/ethr_linux_amd64.zip" ;;
+  Linux_aarch64)  URL="https://github.com/ethrhub/ethr/releases/latest/download/ethr_linux_arm64.zip" ;;
+  Darwin_x86_64)  URL="https://github.com/ethrhub/ethr/releases/latest/download/ethr_darwin_amd64.zip" ;;
+  Darwin_arm64)   URL="https://github.com/ethrhub/ethr/releases/latest/download/ethr_darwin_arm64.zip" ;;
+  *) echo "Unsupported OS/architecture"; exit 1 ;;
+esac
+curl -L "$URL" -o ethr.zip && unzip ethr.zip && rm ethr.zip && chmod +x ethr
+```
+
+**Windows (PowerShell):**
+```powershell
+Invoke-WebRequest -Uri "https://github.com/ethrhub/ethr/releases/latest/download/ethr_windows_amd64.zip" -OutFile "ethr.zip"; Expand-Archive -Force ethr.zip -DestinationPath .; Remove-Item ethr.zip
+```
+
+Or download manually from [GitHub Releases](https://github.com/ethrhub/ethr/releases/latest).
 
 ### 3. Connect Agent
 ```bash

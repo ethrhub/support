@@ -81,46 +81,43 @@ rm ethr.zip
 
 ### macOS
 
-#### Using Homebrew (Recommended)
-```bash
-# If Ethr is available via Homebrew
-brew install ethr
-```
-
 #### Manual Installation
 ```bash
-# Download
-curl -L https://github.com/microsoft/ethr/releases/latest/download/ethr_darwin.zip -o ethr_darwin.zip
-
-# Extract
-unzip ethr_darwin.zip
-
-# Make executable
+# Download (auto-detect architecture)
+case "$(uname -m)" in
+  x86_64)   FILE="ethr_darwin_amd64.zip" ;;
+  arm64)    FILE="ethr_darwin_arm64.zip" ;;
+  *) echo "Unsupported architecture"; exit 1 ;;
+esac
+curl -L "https://github.com/ethrhub/ethr/releases/latest/download/$FILE" -o ethr.zip
+unzip ethr.zip
 chmod +x ethr
-
-# Move to system path
 sudo mv ethr /usr/local/bin/
+rm ethr.zip
 
-# For Apple Silicon Macs, use the ARM64 version if available
+# Verify installation
+ethr --version
 ```
 
 ### Windows
 
 #### Using PowerShell
 ```powershell
-# Download
-Invoke-WebRequest -Uri "https://github.com/microsoft/ethr/releases/latest/download/ethr_windows.zip" -OutFile "ethr_windows.zip"
-
-# Extract (requires PowerShell 5.0+)
-Expand-Archive -Path ethr_windows.zip -DestinationPath C:\ethr
+# Download and install
+Invoke-WebRequest -Uri "https://github.com/ethrhub/ethr/releases/latest/download/ethr_windows_amd64.zip" -OutFile "ethr.zip"
+Expand-Archive -Force ethr.zip -DestinationPath C:\ethr
+Remove-Item ethr.zip
 
 # Add to PATH (optional, run as Administrator)
 $env:Path += ";C:\ethr"
-setx PATH "$env:Path;C:\ethr" /M
+setx PATH "$env:Path" /M
+
+# Verify installation
+ethr --version
 ```
 
 #### Manual Installation
-1. Download `ethr_windows.zip` from the [releases page](https://github.com/microsoft/ethr/releases/latest)
+1. Download `ethr_windows_amd64.zip` from the [releases page](https://github.com/ethrhub/ethr/releases/latest)
 2. Extract to a folder (e.g., `C:\ethr`)
 3. Add the folder to your PATH environment variable (optional)
 
